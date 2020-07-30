@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">OpenLibreNFC</string>
+    <string name="scan">Scan</string>
+    <string name="reset_age">Reset Age</string>
+    <string name="start">Start</string>
+
+    <string name="dump_memory">Dump Memory</string>
+    <string name="load_memory">Load Memory</string>
+
+    <string name="libreid">ID: %1$s</string>
+    <string name="uid">Unique ID: %1$s</string>
+    <string name="age">Sensor Age: %1$f days</string>
+    <string name="type">Libre Type: %1$s</string>
+    <string name="region">Libre Region: %1$d</string>
+    <string name="status">Libre Status: %1$d (%2$s)</string>
+
+    <string name="selected_action">Selected Action: %1$s</string>
+
+</resources>
