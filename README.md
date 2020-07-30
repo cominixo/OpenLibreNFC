@@ -7,10 +7,7 @@ Do not use sensors modified with this app to make medical decisions. I am not re
 ## Installation
 To use this app, you'll have to build it yourself.
 
-You'll need the Android SDK installed and define the ANDROID_SDK_ROOT environment variable, after that, you can just do:
-`./gradlew assembleDebug` on Linux (and probably Mac)
-`gradlew assembleDebug` on Windows
-The .apk file should be at `app/build/outputs/apk/` after that
+You'll need the Android SDK installed and define the ANDROID_SDK_ROOT environment variable, after that, you can run gradlew to built the .apk file (it should probably be signed so you can install it).
 
 You can also install Android Studio and build it from there.
 
