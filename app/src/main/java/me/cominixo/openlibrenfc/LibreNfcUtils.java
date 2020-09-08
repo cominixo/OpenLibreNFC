@@ -46,9 +46,6 @@ public class LibreNfcUtils {
 
         }
 
-        // TODO remove dump for debug
-        System.out.println(bytesToHexStr(received));
-
         return received;
 
     }
@@ -140,7 +137,6 @@ public class LibreNfcUtils {
         }
 
         if (cleanString.size() != 360) {
-            System.out.println(string);
             return null;
         }
 

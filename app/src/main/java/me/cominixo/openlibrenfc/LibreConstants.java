@@ -14,6 +14,12 @@ class LibreConstants {
             (byte) 0x00
     };
 
+    static final byte[] LIBRE1_JAPAN_ID = {
+            (byte) 0x00,
+            (byte) 0x00,
+            (byte) 0x04
+    };
+
     static final int MEMORY_SIZE = 360;
 
     // Password to unlock/lock the chip

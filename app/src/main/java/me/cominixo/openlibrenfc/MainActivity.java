@@ -210,6 +210,8 @@ public class MainActivity extends AppCompatActivity {
                 libreType = "Libre 1 New";
             } else if (Arrays.equals(typeIdentifier, LibreConstants.LIBRE1_OLD_ID)) {
                 libreType = "Libre 1 Old";
+            } else if (Arrays.equals(typeIdentifier, LibreConstants.LIBRE1_JAPAN_ID)) {
+                libreType = "Libre 1 Japan";
             } else {
                 libreType = "Unsupported";
             }
