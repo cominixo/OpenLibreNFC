@@ -5,7 +5,10 @@
 Do not use sensors modified with this app to make medical decisions. I am not responsible to any damage to the sensor that might occur, use this at your own risk. This app is only intended for research.
 
 ## Installation
-To use this app, you'll have to build it yourself.
+
+Apks are available on the Release tab here on GitHub.
+
+You can also build the app yourself:
 
 [This guide](https://androidaps.readthedocs.io/en/latest/EN/Installing-AndroidAPS/Building-APK.html) from the AndroidAPS docs explains how to build an apk, the steps should be basically the same, just using this repository instead.
 
