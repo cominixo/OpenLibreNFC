@@ -13,6 +13,7 @@
     <string name="type">Libre Type: %1$s</string>
     <string name="region">Libre Region: %1$d</string>
     <string name="status">Libre Status: %1$d (%2$s)</string>
+    <string name="temp">Sensor Temperature: %1$f °C</string>
 
     <string name="selected_action">Selected Action: %1$s</string>
 

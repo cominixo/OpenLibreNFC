@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView uidView;
     private TextView typeView;
     private TextView ageView;
+    private TextView tempView;
     private TextView regionView;
     private TextView statusView;
 
@@ -142,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
         uidView = findViewById(R.id.uid);
         typeView = findViewById(R.id.type);
         ageView = findViewById(R.id.age);
+        tempView = findViewById(R.id.temp);
         regionView = findViewById(R.id.region);
         statusView = findViewById(R.id.status);
         selectedActionView = findViewById(R.id.selected_action);
@@ -152,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
         uidView.setText("");
         typeView.setText("");
         ageView.setText("");
+        tempView.setText("");
         regionView.setText("");
         statusView.setText("");
     }
@@ -352,15 +355,27 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
 
-
+            System.out.println(bytesToHexStr(memory));
             String id = bytesToHexStr(receivedId);
 
             String uid = bytesToHexStr(receivedUid);
+
+            int trendIndex = memory[26];
+
+            int index = trendIndex - 1;
+            if (index < 0)
+                index += 16;
+
+            float temp = (256 * memory[index * 6 + 32] + memory[index * 6 + 31]) & 0x3fff;
+            
+            // https://type1tennis.blogspot.com/2017/09/libre-other-bytes-well-some-of-them-at.html
+            double tempCelsius = Math.round((temp*0.0027689+9.53)*100.0)/100.0;
 
             idView.setText(getString(R.string.libreid, id));
             uidView.setText(getString(R.string.uid, uid));
             typeView.setText(getString(R.string.type, libreType));
             ageView.setText(getString(R.string.age, age/1440));
+            tempView.setText(getString(R.string.temp, tempCelsius));
             regionView.setText( getString(R.string.region, region));
             statusView.setText( getString(R.string.status, status, statusString));
 

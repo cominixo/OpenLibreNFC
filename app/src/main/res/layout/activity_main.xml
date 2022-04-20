@@ -38,9 +38,10 @@
         android:layout_height="34dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="328dp"
         android:text="@string/region"
         app:layout_constraintEnd_toEndOf="@+id/status"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +51,7 @@
         android:layout_height="34dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="296dp"
         android:text="@string/type"
         app:layout_constraintEnd_toEndOf="@+id/region"
         app:layout_constraintHorizontal_bias="1.0"
@@ -63,7 +64,7 @@
         android:layout_height="34dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="360dp"
         android:text="@string/status"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -94,6 +95,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="397dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="262dp"
+        android:text="@string/temp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp" />
 
     <Button
         android:id="@+id/scan"
