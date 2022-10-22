@@ -4,6 +4,8 @@
 ## Disclaimer
 Do not use sensors modified with this app to make medical decisions. I am not responsible to any damage to the sensor that might occur, use this at your own risk. This app is only intended for research.
 
+### This app only works with non-US Libre 1 Sensors, if you have a US Libre 1 sensor this app will not work with it.
+
 ## Installation
 
 Apks are available on the Release tab here on GitHub.
